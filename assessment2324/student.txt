@@ -1,0 +1,5 @@
+Student name: Asiel Elaouare
+Student number: 713629
+Student class: INF1b
+GitHub Repository: your github repository URL
+GitHub Pages URL: your github pages URL
