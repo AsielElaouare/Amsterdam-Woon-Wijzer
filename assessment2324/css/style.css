@@ -7,6 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
 
 
 figure, h1{
@@ -17,10 +20,18 @@ figure, h1{
 body{
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(6, 600px);
+    grid-template-rows: repeat(auto, 600px);
+    row-gap: 20px;
 }
 
+p, h2 ,h3{
+    word-spacing: 5px;
+    
+}
 
+h2, h3{
+    color: #152959;
+}
 
 header{
     grid-area: 1 / 1/ 2 / 4;
@@ -31,30 +42,35 @@ header{
 }
 
 header > h1{
+    width: 15%;
     position: absolute;
-    font-size: 80px;
+    font-size: 3em;
     top: 200px;
-    margin-left: 80px;
-    margin-right: 100px;
+    margin-left: 1em;
     font-family: Arial, Helvetica, sans-serif;
+    color: #152959;
 }
 
 header > .banner{
-    
+
     justify-self: center;
     align-self: center;
 }
 
 header > figure > a > .logo{
-    width: 400px;
-    height: 100px;
+    width: 20rem;
+    height: 5rem;
     margin: 60px 0 0 20px;
 }
+
+
+
+
 
 .top_navbar{
     display: flex;
     height: 50px;
-    background-color: rgb(224, 179, 162);
+    background-color: #304375;
     width: 100vw;
     align-items: center;
     justify-content: center;
@@ -79,19 +95,20 @@ header > input{
 
 .top_navbar > ul >li {
     display: flex;
-    background-color: brown;
+    background-color: #AE3A3D;
     height: 50px;
-    width: 150px;
+    width: 11em;
     align-items: center;
     justify-content: center;
 
 }
 
-.top_navbar > ul >li >a, i{
+.top_navbar > ul >li > a, i{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     padding-left: 5px;
+    align-self: center;
 }
 
 
@@ -106,15 +123,164 @@ main {
 }
 
 main > .intro_text{
-   width: 70%;
+   width: 60%;
+   margin: 100px;
 
 }
+
+ol > li{
+    line-height: 30px;
+
+}
+
+main > ol > li > ul > li {
+    text-indent: 5px;
+    margin: 5px 0px 20px 15px;
+    
+}
+
+
+main > .article_left_side{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+main > .article_right_side{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+main > .article_right_side > figure{
+   align-self: flex-start;
+    position: relative;
+    top: -10rem;
+}
+
+main > .article_right_side > a{
+    position: relative;
+    top: -7rem;
+    background-color: #AE3A3D;
+    padding:10px 20px 10px 20px;
+    align-self: flex-end;
+    color: #fff;
+ }
+ 
+ 
+
+main > .article_left_side  > p{
+    width: 50%;
+}
+
+main > .article_right_side  > p{
+    width: 50%;
+}
+
+
+
+
+main > .article_left_side > figure{
+  align-self: flex-end;
+    position: relative;
+    top: -10rem;
+}
+
+main > .article_left_side > figure > .img_article{
+    align-self: flex-end;
+      position: relative;
+      width: 20rem;
+      height: 20rem;
+  }
+
+  
+
+main > .article_left_side > a{
+      position: relative;
+      top: -16rem;
+      background-color: #AE3A3D;
+      padding:10px 20px 10px 20px;
+      color: #fff;
+  
+}
+  
+  
+
 
 main > article{
     width: 70%;
 }
 
+main > .contact{
+    align-self: start;
+    margin: 200px;
+}
 
+main > .contact > .contact_button{
+    text-decoration: none;
+    background-color: #AE3A3D;
+    padding: 0 10px 0 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+main  > .article_buurtgids{
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    width: 60%;
+    height: 350px;
+    background-color: rgba(174, 58, 61, 0.13);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+main  > .article_buurtgids > h2, h3{
+     align-self: flex-start;
+     color: #152959;
+}
+
+.article_buurtgids > p {
+    width: 50%;
+}
+
+.article_buurtgids > p , a{
+    align-self: flex-start;
+}
+
+.article_buurtgids > figure{
+    align-self: flex-end;
+    position: relative;
+    top: -10rem;
+
+    
+}
+
+
+main  > figure > .separation_bar{
+    width: 100vw;
+}
+
+
+main > article > .figure_sociale_huur{
+    display: block;
+
+}
+
+
+
+main > article > .figure_sociale_huur > img{
+    width: 30rem;
+
+}
 
 iframe{
 
@@ -126,8 +292,9 @@ iframe{
 
 footer{
     display: flex;
-    background-color: lightblue;
+    background-color: #8B99BA;
     width: 100vw;
+    height: 400px;
     grid-area: 6/1/7/4;
     justify-content: space-around;
     align-items: center;
@@ -139,7 +306,7 @@ footer  > nav  > ul{
 
 footer  > nav  > ul > li > .contact_button{
     text-decoration: none;
-    background-color: brown;
+    background-color: #AE3A3D;
     padding: 0 10px 0 10px;  
 }
 
