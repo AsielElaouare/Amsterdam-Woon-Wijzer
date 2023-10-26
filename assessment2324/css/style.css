@@ -8,7 +8,7 @@
 }
 
 a{
-    text-decoration: none;
+    color: #AE3A3D;
 }
 
 
@@ -20,7 +20,7 @@ figure, h1{
 body{
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(auto, 600px);
+    grid-auto-rows: auto;
     row-gap: 20px;
 }
 
@@ -38,10 +38,9 @@ header{
     display: flex;
     flex-direction: column;
     width: 100vw;
-
 }
 
-header > h1{
+header > .title{
     width: 15%;
     position: absolute;
     font-size: 3em;
@@ -64,7 +63,9 @@ header > figure > a > .logo{
 }
 
 
-
+aside {
+    
+}
 
 
 .top_navbar{
@@ -173,7 +174,24 @@ main > .article_right_side > a{
     color: #fff;
  }
  
- 
+
+.main_buurt_info{
+    width: 80%;
+    display: flex;
+
+}
+.main_buurt_info > article > section, figure {
+    display: flex;
+    margin: 50px;
+
+}
+
+.main_buurt_info > article > .flex_column{
+   display: flex;
+   flex-direction: column;
+}
+
+
 
 main > .article_left_side  > p{
     width: 50%;
@@ -212,9 +230,10 @@ main > .article_left_side > a{
   
   
 
-
 main > article{
-    width: 70%;
+    width: 50%;
+    align-self: center;
+    justify-self: center;
 }
 
 main > .contact{
@@ -242,6 +261,9 @@ main  > .article_buurtgids{
     border-radius: 10px;
 }
 
+.start_button{
+    text-decoration: none;
+}
 
 main  > .article_buurtgids > h2, h3{
      align-self: flex-start;
@@ -282,6 +304,13 @@ main > article > .figure_sociale_huur > img{
 
 }
 
+
+
+
+.hidden_object{
+    display: none;
+}
+
 iframe{
 
     width:600px;
@@ -290,6 +319,9 @@ iframe{
 }
 
 
+.verhuistips_main{
+    margin: 40px;
+}
 footer{
     display: flex;
     background-color: #8B99BA;
@@ -308,6 +340,7 @@ footer  > nav  > ul > li > .contact_button{
     text-decoration: none;
     background-color: #AE3A3D;
     padding: 0 10px 0 10px;  
+    color:#fff;
 }
 
 footer > .copy_right_text{
