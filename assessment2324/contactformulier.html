@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/4c23360f25.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/index.js"></script>
     <meta name="description" content="Woon wijzer in Amsterdam" />
     <meta
       name="keywords"
@@ -19,7 +20,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="top_navbar">
         <ul>
           <li>
             <i class="fa-solid fa-house-user"></i><a href="index.html">Home</a>
@@ -43,6 +44,7 @@
         </ul>
       </nav>
     </header>
+  <main class="main_contact_form">
     <h1>Contactformulier</h1>
     <form action="#.php" method="get">
       <fieldset>
@@ -50,28 +52,18 @@
           Personalia:
           <label>Naam*</label>
           <input type="text" id="name" name="name" />
-          <label>Email*:</label>
+          <label>Email*</label>
           <input type="email" value="email" />
           <label>Telefoon</label>
           <input type="number" />
           <label>Onderwerp*</label>
           <label>Tekst*</label>
           <textarea cols="30" rows="10"></textarea>
-          <input type="submit" value="Submit" />
+          <input id="submit-button" type="submit" value="Submit" />
         </legend>
         <p>Vakjes met * teken zijn verplicht.</p>
       </fieldset>
     </form>
-
-    <section>
-      <i class="fa-solid fa-xmark"></i>
-      <h2>Hartelijk Dank</h2>
-      <p>Voor het indienen van je vraag via ons contactformulier.</p>
-      <p>Wij gaan jouw vraag zo snel beantworden!</p>
-      <p>Terug naar<a href="index.html">Home pagina</a></p>
-      <figure>
-        <img src="img/thank_you_backgr.svg" title="Gebouwen" alt="Banner" />
-      </figure>
-    </section>
+  </main>
   </body>
 </html>

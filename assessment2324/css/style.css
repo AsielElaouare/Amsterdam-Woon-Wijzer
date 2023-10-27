@@ -10,7 +10,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
+.cookies{
+    position: fixed;
+    bottom: 3em;
+    right: 7em;
+    background-color: #152959;
+    z-index: 99999;
+    color: #fff;
+}
 
 
 a{
@@ -351,7 +358,42 @@ main > article > .figure_sociale_huur > img{
 }
 
 
+.main_contact_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;    
+}
 
+.main_contact_form > h1{
+    color: #152959;
+}
+
+
+form > fieldset > legend{
+    display: flex;
+    flex-direction: column;
+}
+
+legend{
+    font-size: 20px;
+    color: #152959;
+}
+form > fieldset > legend > p{
+    align-self: flex-end;
+    justify-content: flex-start;
+    font-size: 12px;
+    
+ 
+}
+#submit-button{
+    background-color: #AE3A3D;
+    color: #fff;
+    width: 100px;
+    display: inline;
+}
 
 .hidden_object{
     display: none;
@@ -393,3 +435,10 @@ footer > .copy_right_text{
     align-self: flex-end;
     color: #fff;
 }
+ 
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: rgb(182, 205, 213);
+    }
+  }
