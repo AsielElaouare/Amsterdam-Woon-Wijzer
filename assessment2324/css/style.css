@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+
+
+/* Reset CSS*/
 *{
     margin: 0;
     padding: 0;
@@ -7,14 +10,32 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
+
 a{
     color: #AE3A3D;
 }
 
 
+
+
 figure, h1{
     display: inline;
     width: max-content;
+}
+
+
+.selected:link{
+    color: #d4151c;
+}
+
+.selected:visited{
+    color: #d1999b;
+}
+
+.selected:hover{
+    font-size: 18px;
 }
 
 body{
@@ -24,9 +45,18 @@ body{
     row-gap: 20px;
 }
 
+
+
+
 p, h2 ,h3{
-    word-spacing: 5px;
+    word-spacing: 2px;
+    line-height: 25px;
+    letter-spacing: 2px;
     
+}
+
+.welkom{
+    text-transform: uppercase;
 }
 
 h2, h3{
@@ -170,10 +200,12 @@ main > .article_right_side > a{
  
 
 .main_buurt_info{
-    width: 80%;
     display: flex;
 
 }
+
+
+
 .main_buurt_info > article > section, figure {
     display: flex;
     margin: 50px;
@@ -186,6 +218,26 @@ main > .article_right_side > a{
 }
 
 
+.main_buurt_info > article > .grid_section{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 50px;
+}
+
+
+.main_buurt_info > article > .grid_section > .h2_2{
+    grid-area: 1/2/2/3;
+}
+
+.main_buurt_info > article > figure > img{
+    margin: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #304375;
+}
 
 main > .article_left_side  > p{
     width: 50%;
